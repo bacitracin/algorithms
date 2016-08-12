@@ -11,12 +11,12 @@
 # Here is an example of version numbers ordering:
 # 0.1 < 1.1 < 1.2 < 1.13 < 1.13.4
 
-def versionFunction(version1, version2) # these are strings
+def versionFunction(version1, version2) # these are strings. version1 = "1.13.4", version2 = "1.13"
   
   version_1_array = version1.split(".") # will look like this ["1", "13", "4"]
-  version_2_array = version2.split(".")
+  version_2_array = version2.split(".") # => ["1", "13"]
   
-  parsed_list_1 = [] 
+  parsed_list_1 = [] #empty
   parsed_list_2 = []
 
   version_1_array.each do |number|
@@ -25,9 +25,12 @@ def versionFunction(version1, version2) # these are strings
 
   version_2_array.each do |number|
     parsed_list_2 << number.to_i
-  end # will look like [1, 13, 4]
+  end # will look like [1, 13]
 
-
+  # Make the version arrays similar lengths for comparison
+  # If they're the same length then move on
+  
+  # Comparison
   for number_1 in parsed_list_1
     for number_2 in parsed_list_2
       if number_1 > number_2
