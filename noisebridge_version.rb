@@ -43,15 +43,15 @@ def versionFunction(version1, version2) # these are strings. version1 = "1.13.4"
 
   # Comparison
   for number_1 in parsed_list_1
-    for number_2 in parsed_list_2
-      if number_1 > number_2
-        1
-      elsif number_1 < number_2
-        -1
-      else
-        0
-      end
+    i = 0 # counter variable
+    if parsed_list_1[i] > parsed_list_2[i]
+      1
+    elsif parsed_list_1[i] < parsed_list_2[i]
+      -1
+    else parsed_list_1[i] == parsed_list_2[i] && parsed_list_1[-1] == parsed_list_2[-1]
+      0
     end
+    i++
   end
 
 end
