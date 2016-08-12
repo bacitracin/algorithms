@@ -30,6 +30,17 @@ def versionFunction(version1, version2) # these are strings. version1 = "1.13.4"
   # Make the version arrays similar lengths for comparison
   # If they're the same length then move on
   
+  if parsed_list_1.length > parsed_list_2.length
+    until parsed_list_2.length == parsed_list_1.length do
+      parsed_list_2 << 0 
+    end
+  elsif parsed_list_2.length > parsed_list_1.length
+    until parsed_list_1.length == parsed_list_2.length do
+      parsed_list_1 << 0
+    end
+  end
+  # => parsed_list_1 = [1, 13, 4] , parsed_list_2 = [1, 13, 0]
+
   # Comparison
   for number_1 in parsed_list_1
     for number_2 in parsed_list_2
