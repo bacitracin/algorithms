@@ -1,6 +1,17 @@
 function truncateString(str, num) {
-  // Clear out that junk in your trunk
-  return str;
+  var lengthDifference;
+  
+  if(num <= 3){
+   lengthDifference = num;
+   return str.slice(0, lengthDifference) + "..."; 
+  }
+  else if(str.length > num){
+    lengthDifference = num - 3; // 8
+    return str.slice(0, lengthDifference) + "...";
+  }
+  else {
+    return str;
+  }
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
