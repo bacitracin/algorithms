@@ -3,11 +3,10 @@
 
 function largestOfFour(arr) {
   var largestArray = [];
-  
+
   for (i = 0; i < arr.length; i++) { 
     var maxOfArray = Math.max.apply(Math, arr[i]);
-    console.log()
-    largestArray.push(maxOfArray)
+    largestArray.push(maxOfArray);
   }
   
   return largestArray; // Should be => [5, 27, 39, 1001]
