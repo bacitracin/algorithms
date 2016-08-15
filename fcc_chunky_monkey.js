@@ -2,11 +2,15 @@
 // length of size (second argument) and returns them as a two-dimensional array.
 
 function chunkArrayInGroups(arr, size) {
-  finalArray = [];
-  for(i = 0; i < size - 1; i++){
-    chunkArray.push(arr[i]);
+
+  var tempArray = []; // holds values
+  var count = 0;
+
+  while (count < arr.length){
+    tempArray.push(arr.slice(count, count + size)); // pushing an array to the tempArray
+    count += size;
   }
-  return arr;
+  return tempArray;
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2); // => [["a", "b"], ["c", "d"]]
