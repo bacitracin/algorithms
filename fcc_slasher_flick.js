@@ -3,7 +3,7 @@
 // The head means the beginning of the array, or the zeroth index.
 
 function slasher(arr, howMany) {
-  // it doesn't always pay to be first
+  arr.splice(0, howMany);
   return arr;
 }
 
