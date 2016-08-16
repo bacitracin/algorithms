@@ -42,8 +42,7 @@ def versionFunction(version1, version2) # these are strings. version1 = "1.13.4"
   # => parsed_list_1 = [1, 13, 4] , parsed_list_2 = [1, 13, 0]
 
   # Comparison
-  for number_1 in parsed_list_1
-    i = 0 # counter variable
+  for (i=0; i < parsed_list_1.length; i++)
     if parsed_list_1[i] > parsed_list_2[i]
       1
     elsif parsed_list_1[i] < parsed_list_2[i]

@@ -8,7 +8,9 @@
 //Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
 function mutation(arr) {
-  return arr;
+  var firstWord = arr[0].toLowerCase().split("");  // ["h", "e", "l", "l", "o"]
+  var secondWord = arr[1].toLowerCase().split(""); // ["h", "e", "y"]
+
 }
 
 mutation(["hello", "hey"]);
