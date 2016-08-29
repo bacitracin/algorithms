@@ -23,10 +23,14 @@ def longest_dna_sequence(string)
         max_sequence_length = current_sequence_length
       end
     else
-      current_sequence_length = 0 #reset
+      current_sequence_length = 0 # reset
     end
   end
 
   return max_sequence_length
 
 end
+
+
+# Time Complexity: O(n) - have to iterate over every character of the string
+# Space Complexity: constant 
