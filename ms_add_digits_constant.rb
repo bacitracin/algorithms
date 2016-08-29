@@ -16,3 +16,6 @@ def add_digits(num) # 38
   num_sum
 
 end
+
+
+# Currently only does it once, need to have it add again until num_sum is a single digit
