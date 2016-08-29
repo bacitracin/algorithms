@@ -41,7 +41,6 @@ def find_num_combos("ab", "ababab")
    string_to_search_array = string_to_search.split("") # => ["a", "b", "a", "b", "a", "b"]
    
    # brute - loop over each part of the array, check the letter
-   
    #if the letter is the first letter we're searching for, continue on, otherwise move on to next
    
    full_search_term_counter = 0
