@@ -19,3 +19,18 @@ end
 
 
 # Currently only does it once, need to have it add again until num_sum is a single digit
+
+
+var addDigits = function(num) {
+    //turn number into string then into array
+    if(num < 10){
+        return num;
+    }
+    var numArr = num.toString().split("");
+    //call reduce on the array and add number together
+    var sum = numArr.reduce(function(a,b){
+        return parseInt(a) + parseInt(b);
+    });
+    //otherwise pass it back through addDigits
+    return addDigits(sum);
+};
