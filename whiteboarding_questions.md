@@ -12,3 +12,5 @@
   * Insertion sort
   * Merge sort
   * Quick sort
+  * Breadth first search
+  * Depth first search
