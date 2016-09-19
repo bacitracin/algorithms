@@ -10,14 +10,13 @@
 # First approach create random numbers and compare
 
 def generate_diff_num_randomly(array)
-  random_number = -1
-
-  # Have to compare every time...
-  if array.include? random_number
-    random_number = rand(1..1000)
-  else
-    random_number
+  random_number = 0;
+  # Have to go though n items every time...
+  until !array.include?(random_number)
+    random_number = rand(0..(array.size + 1))
   end
+
+  random_number
 end
 
 def generate_diff_num_add_one(array)
