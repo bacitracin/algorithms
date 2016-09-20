@@ -14,3 +14,16 @@ function findLongestWord(str) {
 }
 
 findLongestWord("The quick brown fox jumped over the lazy dog");
+
+// Ruby
+def find_longest_word(str)
+  string_array = str.split(" ")
+  
+  max_length = 0
+  string_array.each do |word|
+    if word.length > max_length
+      max_length = word.length
+  end
+
+  max_length
+end

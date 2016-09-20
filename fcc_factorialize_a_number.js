@@ -8,3 +8,16 @@ function factorialize(num) {
   return total;
 }
 
+// Ruby version
+
+def factorialize(num)
+
+  total = 1
+  (1..num).each do |n|
+    total *= n
+  end
+
+  total
+
+end
+
