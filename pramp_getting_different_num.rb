@@ -20,8 +20,7 @@ def generate_diff_num_randomly(array)
 end
 
 def generate_diff_num_add_one(array)
-  array_max = array.max
-  array_max + 1
+  array.max + 1
 end
 
 # How to handle null bit? 
