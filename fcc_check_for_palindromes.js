@@ -7,3 +7,9 @@ function palindrome(str) {
 }
 
 palindrome("eye");
+
+// Ruby version
+
+def is_palindrome?(str)
+  str.reverse.downcase == str.downcase 
+end
