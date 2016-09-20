@@ -7,10 +7,10 @@
 //The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".
 //Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
 
-function mutation(arr) {
-  var firstWord = arr[0].toLowerCase().split("");  // ["h", "e", "l", "l", "o"]
-  var secondWord = arr[1].toLowerCase().split(""); // ["h", "e", "y"]
+//function mutation(arr) {
+//  var firstWord = arr[0].toLowerCase().split("");  // ["h", "e", "l", "l", "o"]
+//  var secondWord = arr[1].toLowerCase().split(""); // ["h", "e", "y"]
 
-}
+//}
 
-mutation(["hello", "hey"]);
+//mutation(["hello", "hey"]);
