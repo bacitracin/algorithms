@@ -1,3 +1,4 @@
+# 1 of 3 HR challenges for LaunchCode
 # Given one array create a zigzag array
 # largest # first, then smallest
 # then remaining members alternate between

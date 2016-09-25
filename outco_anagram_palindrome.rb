@@ -1,7 +1,6 @@
 # anagram_palindrome?
-#
-# Write a function which accepts a word, and returns true or false if there exists some anagram of that word that is a palindrome.
-#
+# Write a function which accepts a word, and returns true or 
+# false if there exists some anagram of that word that is a palindrome.
 
 def anagram_palindrome?(word)
   ## loop through the word and add to my hash, keep track of count    mentions { :c => 2, :a => 2, ....}

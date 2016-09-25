@@ -1,3 +1,4 @@
+# 1 of 3 HR challenges for LaunchCode
 # print out the number from the array that is lonely
 # Ex [1, 1, 2, 33, 33] => 2
 
