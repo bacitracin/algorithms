@@ -7,7 +7,9 @@
 
 * If I type https://google.com into my browser and press enter, what happens?
 
-* Reverse a singly linked list
+* Reverse a singly linked list -- IN PLACE
+
+* Design Google (trie)
 
 * Implement the following:
   * Binary search
