@@ -11,6 +11,8 @@
 
 * Design Google (trie)
 
+* Describe efficient ways to identify & remove duplicates from files
+
 * Implement the following:
   * Binary search
   * Linked list
