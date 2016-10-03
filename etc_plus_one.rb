@@ -16,17 +16,17 @@ def plus_one(integer_array)
   result_array = integer_array
 
   # 3. helper method
-  increment_one = lambda do |result_array|
+  increment_one = lambda do |i|
     # 4. base case
-    if result_array[index_counter] != 9
-      result_array[index_counter] += 1
+    if result_array[i] != 9
+      result_array[i] += 1
       return result_array
     end
     # 5. recursive
     result_array[index_counter] = 0
     index_counter = index_counter - 1
     #. invoke helper method
-    increment_one.call
+    increment_one.call(integer_array)
   end
 
   increment_one.call(integer_array)

@@ -13,7 +13,7 @@ end
 # Can walk through the outside edges of the string and work its way in
 def is_palindrome?(string) # "racecar"
   forwards_index = 0
-  backwards_index = -1
+  backwards_index = string.length - 1
   number_checks = (string.length/2) + 1
   
   number_checks.times do |i|
