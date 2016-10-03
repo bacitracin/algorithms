@@ -12,10 +12,13 @@
 # Auxiliary Space Complexity: O(1)
 
 # Naive solution: Going through the entire array and keeping count of ones , 
-# or [0, 0, 0, 1, 1, 1].count(1) , but that's linear runtime
+# but that's linear runtime & doesn't leverage the fact that array is sorted
+def number_of_ones(input_array)
+  input_array.count(1)
+end
+
 
 # Other option: Implement binary search here
-
 def number_of_ones(input_array)
   start_index = 0
   end_index = input_array.length - 1 # 5
@@ -38,3 +41,7 @@ def number_of_ones(input_array)
   return input_array.length - (middle_index) # 3
 
 end
+
+
+
+
