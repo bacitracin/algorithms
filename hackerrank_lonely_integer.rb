@@ -11,10 +11,10 @@ def  lonelyInteger( arr)
     element_count[element] += 1
   end
     
-  # answer_hash = element_count.select{|key| element_count[key] == 1}
-  # answer_hash.keys.first
+   answer_hash = element_count.select{|key| element_count[key] == 1}
+   answer_hash.keys.first
 
-  a.find { |element| puts element if element_count[element]} == 1
+  #arr.find { |element| puts element if element_count[element]} == 1
 
 end
 
