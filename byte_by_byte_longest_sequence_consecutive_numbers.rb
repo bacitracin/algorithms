@@ -4,7 +4,8 @@
 # consecutive([4, 2, 1, 6, 5]) = 3  [4, 5, 6]
 
 # Input: array of integer
-# Output: A single integer indicating the longest sequence of consecutive numbers
+# Output: A single integer indicating the longest sequence of 
+# consecutive numbers
 
 def longest_consecutive_sequence(input_array) #[ 4, 2, 1, 6, 5]
 

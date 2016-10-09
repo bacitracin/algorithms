@@ -17,22 +17,22 @@ def merge_two_arrays(arr1, arr2)
 
   while i != arr1.length - 1 && j != arr2.length - 1
     if arr1[i] < arr2[j]
-      results_array.push(arr[i])
+      results_array.push(arr1[i])
       i += 1
     else 
-      results_array.push(arr[j])
+      results_array.push(arr2[j])
       j += 1
     end
   end
 
-  if ((i == arr1.length - 1) && (j == arr2.length - 1)
-    return results_array
+  if (i == arr1.length - 1) && (j == arr2.length - 1)
+    return results_array.flatten
   elsif (i == arr1.length - 1)
     results_array.push(arr2[j..-1])
   else
     results_array.push(arr1[i..-1])
   end 
 
-  return results_array
+  return results_array.flatten
 
 end

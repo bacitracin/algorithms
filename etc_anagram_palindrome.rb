@@ -3,9 +3,10 @@
 # false if there exists some anagram of that word that is a palindrome.
 
 def anagram_palindrome?(word)
-  ## loop through the word and add to my hash, keep track of count    mentions { :c => 2, :a => 2, ....}
-  ## at the end, check that every key's value is even 
-  ## if one is odd, make sure there's only one letter that has odd value
+  # loop through the word and add to my hash, keep track of count   
+  #  mentions { :c => 2, :a => 2, ....}
+  # at the end, check that every key's value is even 
+  # if one is odd, make sure there's only one letter that has odd value
   
   letter_count = Hash.new(0)
   
