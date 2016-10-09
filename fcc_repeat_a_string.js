@@ -21,10 +21,11 @@ def repeat_string_num_times(str, num)
 
   return_string = ""
 
-  (1..num).each do |n|
+  num.times do
     return_string += str
   end
 
   return_string
   
 end
+

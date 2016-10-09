@@ -27,8 +27,3 @@ def plus_one(integer_array)
   return integer_array
 
 end
-
-
-
-
-
