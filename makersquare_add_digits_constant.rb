@@ -20,7 +20,6 @@ end
 
 # Currently only does it once, need to have it add again until num_sum is a single digit
 
-
 var addDigits = function(num) {
     //turn number into string then into array
     if(num < 10){

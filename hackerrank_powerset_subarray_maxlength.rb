@@ -10,9 +10,9 @@ def max_length(a, k)
     qualified_subarrays_lengths = []
     
     subarrays_array = find_subarrays(a) # [[1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
-    subarrays_array.each do |subarray|
+    subarrays_arrbay.each do |subarray|
         if subarray.inject { |sum, n| sum + n } <= k
-            qualified_subarrays_lengths << subarray.length 
+            qualified_suarrays_lengths << subarray.length 
         end
     end
     
