@@ -11,26 +11,24 @@
 
 def plus_one(integer_array)
 
-  # 1. set counter, scope variables
-  index_counter = -1
-  result_array = integer_array
+  index = integer_array.length - 1 # Last index
 
-  # 3. helper method
-  increment_one = lambda do |i|
-    # 4. base case
-    if result_array[i] != 9
-      result_array[i] += 1
-      return result_array
+  while integer_array[index] == 9
+    integer_array[index] = 0
+
+    if index == 0
+      integer_array.unshift(1)
+      return integer_array
     end
-    # 5. recursive
-    result_array[index_counter] = 0
-    index_counter = index_counter - 1
-    #. invoke helper method
-    increment_one.call(integer_array)
+    index -= 1
   end
 
-  increment_one.call(integer_array)
-  # 2. return result
-  return result_array
+  integer_array[index] += 1
+  return integer_array
 
 end
+
+
+
+
+
