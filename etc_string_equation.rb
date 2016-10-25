@@ -7,5 +7,13 @@
 
 def string_calculator(str)
 
+  equation_array = str.split() 
+  # ["6", "+", "3", "*", "4", "+", "2", "-", "2", "/", "2", "*", "10"]
+
+  for item in equation_array
+    if item == "*" || item == "/"
+      # run the function item to the left
+    end
+  end
 
 end
