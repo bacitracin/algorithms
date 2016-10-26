@@ -2,10 +2,6 @@ string_sizes = gets.strip # "20 4"
 input_string = gets.strip # "ABCDDDDABCDABCDDCCCB"
 pattern = gets.strip #"AB*D"
 
-input_string_size = string_sizes.split()[0].to_i # 20
-pattern_size = string_sizes.split()[1].to_i # 4
-stop_index = input_string_size - pattern_size
-
 def create_regex(pattern_str)
   regex_result = ''
 
@@ -25,12 +21,17 @@ def create_regex(pattern_str)
 
 end
 
-def count_matches(input_string, pattern)
-  regex_search = create_regex(pattern)
+def count_matches(string_sizes, input_string, pattern)
+  regex_search = create_regex(pattern) # /[A][B].[D]/
+
+  input_string_size = string_sizes.split()[0].to_i # 20
+  pattern_size = string_sizes.split()[1].to_i # 4
+
+  stop_index = input_string_size - pattern_size 
   matches = 0
 
-  0..stop_index.each do |index|
-    if regex_search =~ input_string[index, index + pattern_size]
+  for index in (0..stop_index)
+    if regex_search.match input_string[index, index + pattern_size -1]
       matches += 1
     end
   end
